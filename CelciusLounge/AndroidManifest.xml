@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.celciuslounge.mav"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.INTERNET" /> 
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:name="CelciusLoungeApplication">
+        <activity android:name=".CelciusLoungeNews"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".CelciusNews" ></activity>
+        <activity android:name=".StatusUpdateActivity" ></activity>
+        <activity android:name=".TimelineActivity" ></activity>
+        <service android:name=".UpdaterService" ></service>
+        <activity android:name=".PrefsActivity"></activity>
+        <receiver android:name="BootReceiver" android:permission="">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

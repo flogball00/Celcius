@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, CelciusLoungeNews!</string>
+    <string name="app_name">CelciusLounge</string>
+     
+    <string name="activity_status_update_title">Status Update</string>
+    <string name="button_update_status_text">Update Status</string>
+    <string name="edit_status_message_hint">Please enter 140 character status update</string>
+    <string name="status_post_success">Posted status successfully!</string>
+    <string name="status_post_fail">Failed to post status message</string>
+    <string name="pref_user_title">User Name</string>
+    <string name="pref_user_summary">Enter the user name for your microblogging site</string>
+    <string name="pref_password_title">Password</string>
+    <string name="pref_password_summary">Enter a password for your microblogging site</string>
+    <string name="pref_site_url_title">Site URL</string>
+    <string name="pref_site_url_summary">Enter the URL to access your microblogging site</string>
+    <string name="menu_prefs_title">Settings</string>
+    <string name="menu_prefs_title_cond">Settings</string>
+    <string name="menu_start_service_title">Start Timeline Updates</string>
+    <string name="menu_start_service_title_cond">Start Updates</string>
+    <string name="menu_stop_service_title">Stop Timeline Updates</string>
+    <string name="menu_stop_service_title_cond">Stop Updates</string>
+    <string name="menu_timeline_title">Show Timeline Updates</string>
+    <string name="menu_timeline_title_cond">Show Timeline</string>
+    <string name="activity_timeline_title">Friends Timeline</string>
+    <string name="timeline_activity_empty_text">No timeline activity to display</string>
+    <string name="menu_timeline_refresh_title">Refresh Friends Timeline</string>
+    <string name="menu_timeline_refresh_title_cond">Refresh Timeline</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:titleCondensed="@string/menu_prefs_title_cond"
+		android:title="@string/menu_prefs_title" android:id="@+id/menu_prefs"
+		android:icon="@android:drawable/ic_menu_preferences" />
+	<item android:titleCondensed="@string/menu_timeline_title_cond"
+		android:title="@string/menu_timeline_title" android:id="@+id/menu_timeline"
+		android:icon="@drawable/menu_timeline" />
+	<item android:title="@string/menu_timeline_refresh_title"
+		android:titleCondensed="@string/menu_timeline_refresh_title_cond"
+		android:icon="@drawable/menu_refresh" android:id="@+id/menu_timeline_refresh" />
+
+</menu>
