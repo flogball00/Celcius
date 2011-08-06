@@ -49,11 +49,11 @@ public class CelciusLoungeNews extends TabActivity {
                       .setContent(intent);
         tabHost.addTab(spec);
         
-        intent = new Intent().setClass(this, CelciusVideos.class);
-        spec = tabHost.newTabSpec("Video").setIndicator("Video",
-                res.getDrawable(R.drawable.ic_tab_artist))
-            .setContent(intent);
-        tabHost.addTab(spec);
+       // intent = new Intent().setClass(this, CelciusVideos.class);
+       // spec = tabHost.newTabSpec("Video").setIndicator("Video",
+       //         res.getDrawable(R.drawable.ic_tab_artist))
+       //     .setContent(intent);
+       // tabHost.addTab(spec);
         
         
         tabHost.getTabWidget().getChildAt(tabHost.getCurrentTab()).setBackgroundColor(Color.BLUE);

@@ -64,8 +64,8 @@ public class CelciusNews extends ListActivity {
 		}
 	}
 	
-	private void parse(String mir) throws Exception {
-		jObject = new JSONObject(mir);
+	private void parse(String newsfeed) throws Exception {
+		jObject = new JSONObject(newsfeed);
 
 		//getting the JSON array for news
 		JSONArray menuObject = jObject.getJSONArray("news");
@@ -85,6 +85,9 @@ public class CelciusNews extends ListActivity {
 	}
 	
 	private void populateList(String title, String date, String description) {
+		//removes prior info from list
+		list.clear();
+		//enter info into list 
 		HashMap<String,String> temp = new HashMap<String,String>();
 		temp.put("title",title);
 		temp.put("date", date);

@@ -25,16 +25,16 @@ public class StatusProvider extends ContentProvider {
 	private static final int DB_VERSION = 3;
 	private static final String T_TIMELINE = "timeline";
 	
-	public static final String AUTHORITY = "com.marakana.android.yamba";
+	public static final String AUTHORITY = "com.celciuslounge.mav";
 	
 	// The content:// style URL for this table
 	public static final Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/status");
 	
 	// The MIME type providing a set of statuses
-	public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.marakana.status";
+	public static final String CONTENT_TYPE = "vnd.android.cursor.dir/vnd.celcius.status";
 
 	// The MIME type providing a single status
-	public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.marakana.status";
+	public static final String CONTENT_ITEM_TYPE = "vnd.android.cursor.item/vnd.celcius.status";
 
 	// Constants to help differentiate between the URI requests
 	private static final int STATUSES = 1;
@@ -104,13 +104,6 @@ public class StatusProvider extends ContentProvider {
 	@Override
 	public boolean onCreate() {
 		Context context = getContext();
-		// The onCreate() method runs in the looper thread. We don't want to block it,
-		// so we won't invoke getWritableDatabase() here -- it could cause on upgrade
-		// of an existing database, which would be time consuming.
-		// Instead, we invoke getWritableDatabase() in the CRUD methods, because
-		// Android automatically invokes them in worker threads in the CP process.
-		// The client might block when invoking a CRUD method, but that's its problem;
-		// the client should ideally invoke them from its own worker thread.
 		dbHelper = new DbHelper(context);
 		return (dbHelper == null) ? false : true;
 	}

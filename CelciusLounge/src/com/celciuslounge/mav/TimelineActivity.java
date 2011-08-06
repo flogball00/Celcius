@@ -42,14 +42,6 @@ public class TimelineActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.timeline);
-		//direct DB access Version
-		//YambaApplication app = (YambaApplication) getApplication();
-		
-		
-		
-		//direct DB access Version
-		//cursor = app.getDb().query(TimelineHelper.TABLE, null, null, null, null, null, 
-		//		TimelineHelper.KEY_CREATED_AT + " DESC");
 		
 		//Content provider Version
 		cursor = getContentResolver().query(StatusProvider.CONTENT_URI,null,null,null,null);
